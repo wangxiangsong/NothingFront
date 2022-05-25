@@ -1,0 +1,84 @@
+@import './dark.less';
+@import './light.less';
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 12px '宋体', 'Arial Narrow', HELVETICA;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  color: #2d374b;
+  text-decoration: none;
+}
+a:hover {
+  color: #cd0200;
+  text-decoration: underline;
+}
+em {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  word-wrap: break-word;
+}
+
+// 滚动条整体样式
+*::-webkit-scrollbar {
+  width: var(--self-scrollbar-size);
+  height: var(--self-scrollbar-size);
+}
+
+// 滚动条内部滑块
+*::-webkit-scrollbar-thumb {
+  border-radius: var(--self-scrollbar-border-radius);
+  background-color: var(--xc-xone-scrollbar-thumb-bg);
+  transition: background-color 0.3s;
+}
+
+// 鼠标悬停滚动条内部滑块
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--xc-xone-scrollbar-thumb-bg);
+}
+
+// 滚动条内部轨道
+*::-webkit-scrollbar-track {
+  background-color: var(--xc-xone-scrollbar-bg);
+}
+
+// 滚动条右下角小方块
+*::-webkit-scrollbar-corner {
+  background-color: var(--xc-xone-scrollbar-bg);
+}
