@@ -1,2 +1,15 @@
-# Nothing
-Nothing_at sixes and sevens
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```
