@@ -5,7 +5,7 @@ const HomePages: FC = () => {
   return (
     <div className={styles['homePage']}>
       <div className={styles['homePage_title']}>
-        <span></span>
+        <span>呵呵</span>
         常用功能
       </div>
       <div className={styles['homePage_content']}></div>
