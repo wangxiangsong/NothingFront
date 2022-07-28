@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 import path from 'path';
 import routes from './src/config/routes';
+import WindiCSSWebpackPlugin from 'windicss-webpack-plugin';
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -16,5 +17,8 @@ export default defineConfig({
     '@styles': path.resolve(__dirname, '../src/styles/'),
     '@mock': path.resolve(__dirname, '../mock/'),
     '@': path.resolve(__dirname, '../src/'),
+  },
+  chainWebpack(config: any) {
+    config.plugin('windicss').use(WindiCSSWebpackPlugin);
   },
 });

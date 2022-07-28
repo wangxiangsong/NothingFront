@@ -1,0 +1,31 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  .modal_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    overflow: auto;
+    outline: 0;
+    width: 500px;
+    height: 200px;
+    background-color: #eee;
+    .cancel {
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+    .content {
+      margin-top: 30px;
+    }
+  }
+}
