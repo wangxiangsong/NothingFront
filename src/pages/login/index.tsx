@@ -4,7 +4,6 @@ import { Form, Button, Input } from 'antd';
 
 const Login: FC = () => {
   const [form] = Form.useForm();
-
   return (
     <div className="h-[calc(100%+1rem)] flex justify-center items-center">
       <div className="w-60vh h-40vh mt-50px flex">
